@@ -834,10 +834,11 @@ body {
         max-width: 100%;
     }
     .hero-image-wrapper {
-        width: 100%;
-        border-radius: var(--radius-xl);
-        overflow: hidden;
-    }
+    width: 100%;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+}
     .hero-image {
         width: 100%;
         height: auto;
