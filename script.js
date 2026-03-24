@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (diff < -50) { this.prev(); this.restartAutoplay(); }
             }, { passive: true });
 
-            // Pausar ao passar o mouse
             this.track.addEventListener('mouseenter', () => this.stopAutoplay());
             this.track.addEventListener('mouseleave', () => this.startAutoplay());
 
@@ -196,17 +195,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ============================================
-    // PARALLAX SUAVE
+    // PARALLAX SUAVE — APENAS DESKTOP
     // ============================================
     let ticking = false;
 
     window.addEventListener('scroll', () => {
         if (!ticking) {
             requestAnimationFrame(() => {
-                const scrolled = window.scrollY;
-                document.querySelectorAll('.hero-visual, .about-visual').forEach(el => {
-                    el.style.transform = `translateY(${-(scrolled * 0.5)}px)`;
-                });
+                if (window.innerWidth > 1024) {
+                    const scrolled = window.scrollY;
+                    document.querySelectorAll('.hero-visual, .about-visual').forEach(el => {
+                        el.style.transform = `translateY(${-(scrolled * 0.5)}px)`;
+                    });
+                }
                 ticking = false;
             });
             ticking = true;
