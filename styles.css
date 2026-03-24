@@ -593,20 +593,18 @@ body {
 .dot.active { background: var(--color-accent); transform: scale(1.2); }
 
 /* ============================================
-   SEÇÃO DEPOIMENTOS — CORRIGIDO
+   SEÇÃO DEPOIMENTOS
    ============================================ */
 .testimonials { padding: 8rem 4rem; background: var(--color-cream); }
 
 .testimonials-content { max-width: 1000px; margin: 0 auto; text-align: center; }
 .testimonials .section-title { margin-bottom: 3rem; }
 
-/* FIX: overflow hidden no carousel para esconder cards laterais */
 .testimonial-carousel {
     position: relative;
     overflow: hidden;
 }
 
-/* FIX: removido gap:2rem que causava o desalinhamento do translateX */
 .testimonial-track {
     display: flex;
     gap: 0;
@@ -614,7 +612,6 @@ body {
     will-change: transform;
 }
 
-/* FIX: flex-shrink:0 garante que cada card ocupe exatamente 100% */
 .testimonial-card {
     flex: 0 0 100%;
     min-width: 0;
@@ -788,9 +785,7 @@ body {
     z-index: 1000;
 }
 
-.whatsapp-float img {
-    display: block;
-}
+.whatsapp-float img { display: block; }
 
 /* ============================================
    ANIMAÇÕES
@@ -821,53 +816,78 @@ body {
         padding: 7rem 2rem 4rem;
         gap: 3rem;
         align-items: start;
+        min-height: unset;
     }
+
     .hero-content {
         padding-right: 0;
         order: 2;
     }
+
     .hero-visual {
         order: 1;
         width: 100%;
     }
+
     .hero-image-container {
         max-width: 100%;
+        background: transparent;
+        box-shadow: none;
     }
+
+    /* Remove moldura, borda, sombra e overlay — deixa o degradê da imagem aparecer */
     .hero-image-wrapper {
-    width: 100%;
-    border-radius: 0;
-    overflow: visible;
-    box-shadow: none;
-}
+        border-radius: 0;
+        overflow: visible;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .hero-image-overlay {
+        display: none;
+    }
+
     .hero-image {
         width: 100%;
         height: auto;
         display: block;
         object-fit: contain;
         object-position: top;
+        transform: none !important; /* desativa o hover scale no mobile */
     }
+
     .hero-actions {
         justify-content: center;
     }
+
     .hero-float-card {
         display: none;
     }
+
+    .hero-scroll {
+        display: none;
+    }
+
     .about-container,
     .contact-container {
         grid-template-columns: 1fr;
     }
+
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+
     .gallery-item.large {
         grid-column: span 2;
         grid-row: span 1;
         aspect-ratio: 1;
     }
+
     .gallery-item.wide {
         grid-column: span 2;
     }
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -912,4 +932,3 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
 
 ::selection { background: var(--color-accent); color: var(--color-white); }
-
