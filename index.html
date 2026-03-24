@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âmbar Studio | Lash Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         INSTRUÇÕES DE PERSONALIZAÇÃO
+         ============================================
+
+    1. NOME DO ESTÚDIO: Altere "Âmbar Studio" em todos os lugares
+
+    2. FOTOS: Substitua todas as URLs das imagens (src="...")
+       - Hero: linha ~77
+       - Sobre: linhas ~125 e ~128
+       - Galeria: linhas ~290-307
+       - Depoimentos: opcional, pode adicionar fotos dos clientes
+
+    3. WHATSAPP: Troque "5511999999999" pelo seu número
+       Formato: 55 + DDD + número (sem espaços, traços ou parênteses)
+       Exemplo: 5511987654321
+       Locais: Botão de agendar, botão flutuante, botões de contato
+
+    4. INSTAGRAM: Troque "@ambarstudio" pelo seu usuário
+       Local: Seção de contato
+
+    5. ENDEREÇO: Atualize na seção de contato (~linha 402)
+
+    6. GOOGLE MAPS: Troque o iframe na seção de contato (~linha 447)
+       Como obter: Google Maps > Buscar endereço > Compartilhar > Incorporar mapa
+
+    7. PREÇOS: Ajuste os valores na seção de serviços (~linhas 180-220)
+
+    8. DEPOIMENTOS: Atualize os 5 depoimentos na seção (~linhas 320-365)
+
+    ============================================ -->
+
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navegação -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">Âmbar Studio</span>
+        </div>
+        <div class="nav-links">
+            <a href="#inicio" class="nav-link">Início</a>
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#galeria" class="nav-link">Galeria</a>
+            <a href="#contato" class="nav-link">Contato</a>
+        </div>
+        <a href="https://wa.me/5521979834983?text=Olá, me interessei pelo serviço" target="_blank" class="nav-cta">
+            <span>Agendar</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="line"></span>
+                <span class="text">Lash Designer Especializada</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Valorize sua</span>
+                <span class="title-line highlight">beleza natural</span>
+                <span class="title-line">com elegância</span>
+            </h1>
+            <p class="hero-subtitle">
+                Onde a delicadeza encontra a excelência. 
+                Cílios que transformam olhares em poesia.
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/5521979834983?text=Ol%C3%A1%2C%20me%20interessei%20pelo%20servi%C3%A7o" target="_blank" class="btn-primary">
+                    <span class="btn-text">Agendar Consulta</span>
+                    <span class="btn-hover"></span>
+                </a>
+                <a href="#galeria" class="btn-secondary">
+                    <span>Ver Trabalhos</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M2 12s4-8 10-8 10 8 10 8-4 8-10 8-10-8-10-8Z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img src="foto1.png" alt="Lash Designer Premium" class="hero-image">
+                    <div class="hero-image-overlay"></div>
+                </div>
+                <div class="hero-float-card card-1">
+                    <span class="float-number">500+</span>
+                    <span class="float-label">Clientes felizes</span>
+                </div>
+                <div class="hero-float-card card-2">
+                    <span class="float-icon">✦</span>
+                    <span class="float-label">Técnica exclusiva</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="about-container">
+            <div class="about-visual">
+                <div class="about-image-grid">
+                    <div class="about-img about-img-1">
+                        <img src="foto3.png" alt="Studio interior">
+                    </div>
+                    <div class="about-img about-img-2">
+                        <img src="foto2.png" alt="Detalhe do trabalho">
+                    </div>
+                </div>
+                <div class="about-badge">
+                    <span class="badge-year">+5</span>
+                    <span class="badge-text">anos de<br>excelência</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-eyebrow">Sobre Nós</span>
+                <h2 class="section-title">A arte de realçar<br>o que há de mais<br><em>belo</em> em você</h2>
+                <p class="about-text">
+                    No Âmbar Studio, cada extensão de cílios é uma obra de arte cuidadosamente criada. 
+                    Combinamos precisão técnica e sensibilidade estética para revelar olhares que falam por si.
+                </p>
+                <p class="about-text">
+                    Utilizamos produtos de altíssima qualidade e técnicas internacionais
+                    para garantir resultados impecáveis que valorizam sua beleza natural.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">◇</span>
+                        <span class="feature-text">Produtos premium</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◇</span>
+                        <span class="feature-text">Ambiente acolhedor</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">◇</span>
+                        <span class="feature-text">Atendimento personalizado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="services">
+        <div class="services-header">
+            <span class="section-eyebrow">Serviços</span>
+            <h2 class="section-title">Nossas<br><em>Especializações</em></h2>
+        </div>
+
+        <!-- IMPORTANTE: Troque os preços abaixo pelos seus valores reais -->
+        <div class="services-grid">
+            <div class="service-card" data-service="1">
+                <div class="service-number">01</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M32 8c-13.255 0-24 10.745-24 24 0 13.255 10.745 24 24 24s24-10.745 24-24c0-13.255-10.745-24-24-24z"/>
+                        <path d="M20 28c4-8 12-8 16 0M28 28v16M36 28v16"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Volume Russo</h3>
+                <p class="service-desc">Fios ultra-finos criando um efeito volumoso e dramático, perfeito para quem busca impacto.</p>
+                
+                
+            </div>
+
+            <div class="service-card featured" data-service="2">
+                <div class="service-badge">Mais Popular</div>
+                <div class="service-number">02</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M32 8c-13.255 0-24 10.745-24 24 0 13.255 10.745 24 24 24s24-10.745 24-24c0-13.255-10.745-24-24-24z"/>
+                        <path d="M24 28c2-4 6-4 8 0M32 28c2-4 6-4 8 0M24 32v12M32 32v12M40 32v12"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Volume 5D</h3>
+                <p class="service-desc">Técnica avançada com múltiplos fios por cílio natural. Resultado glamouroso e duradouro.</p>
+                
+            </div>
+
+            <div class="service-card" data-service="3">
+                <div class="service-number">03</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M32 8c-13.255 0-24 10.745-24 24 0 13.255 10.745 24 24 24s24-10.745 24-24c0-13.255-10.745-24-24-24z"/>
+                        <path d="M20 30c4-6 10-6 14 0M30 30c4-6 10-6 14 0"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Fio a Fio</h3>
+                <p class="service-desc">Aplicação individual para um look natural e elegante. Ideal para o dia a dia.</p>
+                
+            </div>
+
+            <div class="service-card" data-service="4">
+                <div class="service-number">04</div>
+                <div class="service-icon">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="32" cy="32" r="24"/>
+                        <path d="M20 32c4-8 12-8 16 0M28 32v12M36 32v12"/>
+                        <path d="M32 16v4M32 44v4M16 32h4M44 32h4"/>
+                    </svg>
+                </div>
+                <h3 class="service-title">Lash Lifting</h3>
+                <p class="service-desc">Curvatura e tingimento dos cílios naturais. Efeito de máscara sem o trabalho diário.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria/Carrossel -->
+    <!-- IMPORTANTE: Troque as URLs das imagens (src="...") pelas suas fotos reais -->
+    <section id="galeria" class="gallery">
+        <div class="gallery-header">
+            <span class="section-eyebrow">Portfólio</span>
+            <h2 class="section-title">Obras de<br><em>Arte</em></h2>
+            <p class="gallery-subtitle">Cada olhar conta uma história única</p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <div class="slide-image">
+                        <img src="foto5.png" alt="Trabalho 1">
+                        <div class="slide-overlay">
+                            <span class="slide-tag">Volume Russo</span>
+                            <h3 class="slide-title">Look Dramático</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="foto6.png" alt="Trabalho 2">
+                        <div class="slide-overlay">
+                            <span class="slide-tag">Fio a Fio</span>
+                            <h3 class="slide-title">Beleza Natural</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="foto7.png" alt="Trabalho 3">
+                        <div class="slide-overlay">
+                            <span class="slide-tag">Volume 5D</span>
+                            <h3 class="slide-title">Glamour Total</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="foto8.png" alt="Trabalho 4">
+                        <div class="slide-overlay">
+                            <span class="slide-tag">Lash Lifting</span>
+                            <h3 class="slide-title">Curva Perfeita</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-image">
+                        <img src="foto4.png" alt="Trabalho 5">
+                        <div class="slide-overlay">
+                            <span class="slide-tag">Volume 5D</span>
+                            <h3 class="slide-title">Efeito Fox</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-btn prev" aria-label="Anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="carousel-btn next" aria-label="Próximo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="testimonials">
+        <div class="testimonials-content">
+            <span class="section-eyebrow">Depoimentos</span>
+            <h2 class="section-title">O que dizem<br>nossas <em>clientes</em></h2>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Uma experiência verdadeiramente transformadora. O atendimento foi impecável, e o resultado superou todas as expectativas. Meus cílios nunca estiveram tão perfeitos.💖"</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Mariana Silva</span>
+                            <span class="author-info">Cliente há 2 anos</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Ambiente acolhedor e uma profissional extremamente capacitada. Sempre saio me sentindo ainda mais bonita, confiante e bem cuidada. Recomendo de olhos fechados."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Camila Oliveira</span>
+                            <span class="author-info">Cliente há 1 ano</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"O Studio é sinônimo de excelência. Cada detalhe é pensado com cuidado e sensibilidade. Já indiquei para várias amigas, e todas ficaram encantadas.✨"</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Juliana Costa</span>
+                            <span class="author-info">Cliente há 8 meses</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Simplesmente maravilhoso! A técnica é impecável e o resultado dura muito. Não troco por nada, é meu lugar favorito nesse mundo."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Fernanda Lima</span>
+                            <span class="author-info">Cliente há 6 meses</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Atendimento personalizado e um resultado impecável. Finalmente encontrei um lugar onde me sinto verdadeiramente cuidada. Recomendo com toda confiança.💕"</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Ana Paula Mendes</span>
+                            <span class="author-info">Cliente há 3 meses</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testimonial-btn prev" aria-label="Depoimento anterior">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-btn next" aria-label="Próximo depoimento">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <!-- ============== IMPORTANTE: CONFIGURAÇÕES A TROCAR ============== -->
+    <!-- 1. ENDEREÇO: Altere o texto do endereço na linha abaixo -->
+    <!-- 2. TELEFONE/WhatsApp: Troque "5511999999999" pelo número correto (formato: 55 + DDD + número) -->
+    <!-- 3. INSTAGRAM: Troque "@ambarstudio" pelo usuário correto -->
+    <!-- 4. GOOGLE MAPS: Troque o SRC do iframe pelo link de incorporação do seu endereço -->
+    <section id="contato" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="section-eyebrow">Contato</span>
+                <h2 class="section-title">Vamos criar<br>algo <em>belo</em> juntas?</h2>
+                <p class="contact-text">
+                    Agende seu horário e venha vivenciar uma experiência única
+                    de cuidado e beleza. Estamos ansiosas para te atender!
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-item-content">
+                            <span class="contact-label">Endereço</span>
+                            <!-- TROCAR: Endereço do seu estabelecimento -->
+                            <span class="contact-value">Rua das Graças, 123 - Santa Cruz<br>Rio de Janeiro, RJ</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-item-content">
+                            <span class="contact-label">WhatsApp</span>
+                            <!-- TROCAR: Seu número de telefone/WhatsApp -->
+                            <span class="contact-value">(21) 99999-9999</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="contact-social">
+                    <span class="social-label">Entre em contato</span>
+                    <div class="social-links">
+                        <!-- TROCAR: Link do seu Instagram -->
+                        <a href="https://instagram.com/apxsites" target="_blank" class="social-link instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                            <span>@ambarstudio</span>
+                        </a>
+                        <!-- TROCAR: Número do WhatsApp (formato: 55 + DDD + número, sem espaços ou traços) -->
+                        <a href="https://wa.me/5521979834983?text=Ol%C3%A1%2C%20me%20interessei%20pelo%20servi%C3%A7o" target="_blank" class="social-link whatsapp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                            </svg>
+                            <span>Chamar no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa do Google Maps -->
+            <div class="contact-map">
+                <!-- TROCAR: Substitua o SRC abaixo pelo link de incorporação do Google Maps do seu endereço -->
+                <!-- Para obter: Google Maps > Buscar seu endereço > Compartilhar > Incorporar mapa > Copiar HTML -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.163726558406!2d-46.65712168447562!3d-23.56257398468189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1d5c5c5%3A0x1234567890abcdef!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização do Âmbar Studio">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">◈ Âmbar Studio</span>
+                <p class="footer-tagline">Realçando a beleza que existe em você</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio" class="footer-link">Início</a>
+                <a href="#sobre" class="footer-link">Sobre</a>
+                <a href="#servicos" class="footer-link">Serviços</a>
+                <a href="#galeria" class="footer-link">Galeria</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/apxsites" target="_blank" class="footer-social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18" cy="6" r="1"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me/5521979834983?text=Ol%C3%A1%2C%20me%20interessei%20pelo%20servi%C3%A7o" target="_blank" class="footer-social-link" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        <path d="M9.5 9c.3.7 1 1.8 2 2.5 1 .7 1.8 1 2.5 1l.8-.4c.2-.1.2-.3 0-.4l-1.2-.8c-.2-.1-.3 0-.4.1l-.3.3c-.8-.4-1.5-1.1-1.9-1.9l.3-.3c.1-.1.2-.3.1-.4l-.8-1.2c-.1-.2-.3-.2-.4 0l-.4.8c-.1.5 0 1 .7 1.7z"/>
+    </svg>
+</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Âmbar Studio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <<a href="https://wa.me/5521979834983?text=Ol%C3%A1%2C%20me%20interessei%20pelo%20servi%C3%A7o" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="34" height="34" alt="WhatsApp">
+</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
